@@ -14,4 +14,33 @@ body {
 .attribution a {
   color: #3e52a3;
 }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 80px;
+}
+
+header .heading-wrapper {
+  display: inline-block;
+}
+
+header .heading-wrapper h1 {
+  margin-bottom: 5px;
+}
+
+header .heading-wrapper h3 {
+  color: #63687e;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+header .dark-mode-button {
+  padding-top: 40px;
+}
 /*# sourceMappingURL=style.css.map */

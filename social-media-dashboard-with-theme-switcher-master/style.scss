@@ -35,3 +35,25 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  .heading-wrapper {
+    display: inline-block;
+    h1 {
+      margin-bottom: 5px;
+    }
+    h3 {
+      color: $Dark-Grayish-Blue-Text;
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+
+  .dark-mode-button {
+    padding-top: 40px;
+  }
+}
