@@ -40,6 +40,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px 80px;
+  margin-bottom: 30px;
   .heading-wrapper {
     display: inline-block;
     h1 {
@@ -55,5 +56,24 @@ header {
 
   .dark-mode-button {
     padding-top: 40px;
+  }
+}
+
+main {
+  padding: 0 60px;
+  .wrapper-1 {
+    display: flex;
+    justify-content: center;
+    .card {
+      text-align: center;
+      background-color: $Light-Grayish-Blue-Card-BG;
+      border-top: 4px solid $Facebook;
+      border-radius: 5px;
+      margin: 0 20px;
+      .card-number {
+        font-size: 50px;
+        margin: 0 100px;
+      }
+    }
   }
 }

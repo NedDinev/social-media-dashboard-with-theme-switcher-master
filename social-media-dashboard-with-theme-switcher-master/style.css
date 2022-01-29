@@ -23,6 +23,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 80px;
+  margin-bottom: 30px;
 }
 
 header .heading-wrapper {
@@ -42,5 +43,31 @@ header .heading-wrapper h3 {
 
 header .dark-mode-button {
   padding-top: 40px;
+}
+
+main {
+  padding: 0 60px;
+}
+
+main .wrapper-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .wrapper-1 .card {
+  text-align: center;
+  background-color: #f0f2fa;
+  border-top: 4px solid #198ff5;
+  border-radius: 5px;
+  margin: 0 20px;
+}
+
+main .wrapper-1 .card .card-number {
+  font-size: 50px;
+  margin: 0 100px;
 }
 /*# sourceMappingURL=style.css.map */
