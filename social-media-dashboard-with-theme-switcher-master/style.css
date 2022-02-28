@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   font-family: "Inter", sans-serif;
+  font-size: 14px;
   font-weight: 400, 700;
   margin: 0;
   padding: 0;
@@ -24,6 +25,7 @@ header {
           justify-content: space-between;
   padding: 20px 80px;
   margin-bottom: 30px;
+  /* Rounded sliders */
 }
 
 header .heading-wrapper {
@@ -41,8 +43,75 @@ header .heading-wrapper h3 {
   margin: 0;
 }
 
-header .dark-mode-button {
-  padding-top: 40px;
+header .dark-mode-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .dark-mode-switch p {
+  color: #aeb3cb;
+  font-weight: 600;
+}
+
+header .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+
+header .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+header .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #aeb3cb;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header input:checked + .slider {
+  background-color: #aeb3cb;
+}
+
+header input:focus + .slider {
+  background: linear-gradient(232deg, #378fe6 0%, #3eda82 70%);
+}
+
+header input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+header .slider.round {
+  border-radius: 34px;
+}
+
+header .slider.round:before {
+  border-radius: 50%;
 }
 
 main {
@@ -58,16 +127,88 @@ main .wrapper-1 {
           justify-content: center;
 }
 
+main .wrapper-1 .card-facebook {
+  border-top: 4px solid #198ff5;
+}
+
+main .wrapper-1 .card-twitter {
+  border-top: 4px solid #1ca0f2;
+}
+
+main .wrapper-1 .card-instagram {
+  border-width: 4px;
+  border-style: solid;
+  -o-border-image: linear-gradient(to right, #fdc468, #df4996) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996)) 1;
+     border-image: linear-gradient(to right, #fdc468, #df4996) 1;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+main .wrapper-1 .card-youtube {
+  border-top: 4px solid #c4032a;
+}
+
 main .wrapper-1 .card {
   text-align: center;
   background-color: #f0f2fa;
-  border-top: 4px solid #198ff5;
   border-radius: 5px;
   margin: 0 20px;
 }
 
+main .wrapper-1 .card .card-username {
+  font-weight: 500;
+}
+
 main .wrapper-1 .card .card-number {
   font-size: 50px;
+  font-weight: 700;
   margin: 0 100px;
+}
+
+main .wrapper-1 .card .card-text {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #63687e;
+  margin: 0 0 20px 0;
+}
+
+main .wrapper-1 .card .card-daily-count {
+  font-weight: 600;
+}
+
+main .wrapper-1 .card .green-up,
+main .wrapper-1 .card .red-down {
+  margin-bottom: 3px;
+  margin-right: 3px;
+}
+
+main .wrapper-1 .card .green {
+  color: #1db489;
+}
+
+main .wrapper-1 .card .red {
+  color: #dc414c;
+}
+
+main .wrapper-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .wrapper-2 .card {
+  padding: 15px;
+  background-color: #f0f2fa;
+  border-radius: 5px;
+  margin: 0 20px;
+}
+
+main .wrapper-2 .card .card-number {
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */
