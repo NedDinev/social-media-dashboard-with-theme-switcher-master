@@ -47,6 +47,7 @@ header .dark-mode-switch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 25px;
 }
 
 header .dark-mode-switch p {
@@ -103,7 +104,7 @@ header input:focus + .slider {
 
 header input:checked + .slider:before {
   -webkit-transform: translateX(26px);
-  transform: translateX(26px);
+          transform: translateX(26px);
 }
 
 header .slider.round {
@@ -151,6 +152,7 @@ main .wrapper-1 .card-youtube {
 }
 
 main .wrapper-1 .card {
+  width: 400px;
   text-align: center;
   background-color: #f0f2fa;
   border-radius: 5px;
@@ -192,23 +194,75 @@ main .wrapper-1 .card .red {
   color: #dc414c;
 }
 
-main .wrapper-2 {
+main .wrapper-2 h2 {
+  color: #63687e;
+}
+
+main .wrapper-2 .row-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-main .wrapper-2 .card {
+main .wrapper-2 .row-1 .card {
+  padding: 20px;
+  background-color: #f0f2fa;
+  border-radius: 5px;
+  margin: 20px;
+  width: 400px;
+}
+
+main .wrapper-2 .row-1 .card .card-text {
+  display: inline-block;
+}
+
+main .wrapper-2 .row-1 .card .card-number {
+  font-size: 30px;
+}
+
+main .wrapper-2 .row-1 .card .card-icon {
+  display: block;
+  float: right;
+  margin-top: 10px;
+}
+
+main .wrapper-2 .row-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .wrapper-2 .row-2 .card {
   padding: 15px;
   background-color: #f0f2fa;
   border-radius: 5px;
-  margin: 0 20px;
+  margin: 20px;
+  width: 400px;
 }
 
-main .wrapper-2 .card .card-number {
+main .wrapper-2 .row-2 .card .card-text {
+  display: inline-block;
+}
+
+main .wrapper-2 .row-2 .card .card-number {
   font-size: 30px;
+}
+
+main .wrapper-2 .row-2 .card img {
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */
