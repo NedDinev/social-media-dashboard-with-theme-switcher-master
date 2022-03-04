@@ -84,8 +84,11 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $Toggle;
-    transition: 0.4s;
+    background: linear-gradient(
+      232deg,
+      rgba(55, 143, 230, 1) 0%,
+      rgba(62, 218, 130, 1) 70%
+    );
   }
 
   .slider:before {
@@ -95,22 +98,23 @@ header {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background: $Dark-Desaturated-Blue-Card-BG;
     transition: 0.4s;
   }
 
   input:checked + .slider {
-    background-color: $Toggle;
+    background: $Toggle;
   }
-
-  input:focus + .slider {
+  input:hover + .slider {
     background: linear-gradient(
       232deg,
       rgba(55, 143, 230, 1) 0%,
       rgba(62, 218, 130, 1) 70%
     );
   }
-
+  input:checked + .slider:before {
+    background: $White-BG;
+  }
   input:checked + .slider:before {
     transform: translateX(26px);
   }
@@ -127,9 +131,24 @@ header {
 
 main {
   padding: 0 60px;
+  h2 {
+    color: $Dark-Grayish-Blue-Text;
+  }
+  .green-up,
+  .red-down {
+    margin-bottom: 3px;
+    margin-right: 3px;
+  }
+  .green {
+    color: $Lime-Green;
+  }
+  .red {
+    color: $Bright-Red;
+  }
   .wrapper-1 {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
     .card-facebook {
       border-top: 4px solid $Facebook;
     }
@@ -171,29 +190,29 @@ main {
       .card-daily-count {
         font-weight: 600;
       }
-      .green-up,
-      .red-down {
-        margin-bottom: 3px;
-        margin-right: 3px;
-      }
-      .green {
-        color: $Lime-Green;
-      }
-      .red {
-        color: $Bright-Red;
-      }
     }
   }
   .wrapper-2 {
-    h2 {
-      color: $Dark-Grayish-Blue-Text;
+    .card-daily-count {
+      font-weight: 600;
+      display: block;
+      float: right;
+    }
+    .inline-box {
+      margin-top: 15px;
+    }
+
+    .card-icon {
+      display: block;
+      float: right;
+      margin-top: 10px;
     }
     .row-1 {
       display: flex;
       flex-direction: row;
       justify-content: center;
       .card {
-        padding: 20px;
+        padding: 20px 30px;
         background-color: $Light-Grayish-Blue-Card-BG;
         border-radius: 5px;
         margin: 20px;
@@ -201,14 +220,14 @@ main {
 
         .card-text {
           display: inline-block;
+          font-weight: 600;
+          color: $Dark-Grayish-Blue-Text;
         }
         .card-number {
           font-size: 30px;
-        }
-        .card-icon {
-          display: block;
-          float: right;
-          margin-top: 10px;
+          font-weight: 600;
+          display: inline-block;
+          margin: 0;
         }
       }
     }
@@ -217,19 +236,21 @@ main {
       flex-direction: row;
       justify-content: center;
       .card {
-        padding: 15px;
+        padding: 15px 30px;
         background-color: $Light-Grayish-Blue-Card-BG;
         border-radius: 5px;
         margin: 20px;
         width: 400px;
         .card-text {
           display: inline-block;
+          font-weight: 600;
+          color: $Dark-Grayish-Blue-Text;
         }
         .card-number {
           font-size: 30px;
-        }
-        img {
+          font-weight: 600;
           display: inline-block;
+          margin: 0;
         }
       }
     }
