@@ -6,7 +6,7 @@ $Lime-Green: hsl(163, 72%, 41%);
 $Bright-Red: hsl(356, 69%, 56%);
 $Facebook: hsl(208, 92%, 53%);
 $Twitter: hsl(203, 89%, 53%);
-$Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+$Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
 $YouTube: hsl(348, 97%, 39%);
 $Toggle-on: linear-gradient(to right, #378fe6, #3eda82) 1;
 $Toggle: hsl(230, 22%, 74%);
@@ -156,30 +156,36 @@ main {
       border-top: 4px solid $Twitter;
     }
     .card-instagram {
-      border-width: 4px;
-      border-style: solid;
-      border-image: $Instagram;
+      border: double 4px transparent;
+      border-radius: 30px;
+      background-image: linear-gradient(
+          $Light-Grayish-Blue-Card-BG,
+          $Light-Grayish-Blue-Card-BG
+        ),
+        $Instagram;
       border-bottom: none;
-      border-right: none;
       border-left: none;
+      border-right: none;
+      background-origin: border-box;
+      background-clip: content-box, border-box;
     }
     .card-youtube {
       border-top: 4px solid $YouTube;
     }
     .card {
-      width: 400px;
+      width: 250px;
       text-align: center;
       background-color: $Light-Grayish-Blue-Card-BG;
-
       border-radius: 5px;
       margin: 0 20px;
       .card-username {
-        font-weight: 500;
+        font-size: 14px;
+        font-weight: 400;
       }
       .card-number {
         font-size: 50px;
         font-weight: 700;
-        margin: 0 100px;
+        margin: 0;
       }
       .card-text {
         text-transform: uppercase;
@@ -190,6 +196,10 @@ main {
       .card-daily-count {
         font-weight: 600;
       }
+    }
+    .card:hover {
+      filter: brightness(90%);
+      cursor: pointer;
     }
   }
   .wrapper-2 {
@@ -212,11 +222,11 @@ main {
       flex-direction: row;
       justify-content: center;
       .card {
-        padding: 20px 30px;
+        padding: 10px 30px;
         background-color: $Light-Grayish-Blue-Card-BG;
         border-radius: 5px;
         margin: 20px;
-        width: 400px;
+        width: 300px;
 
         .card-text {
           display: inline-block;
@@ -230,6 +240,10 @@ main {
           margin: 0;
         }
       }
+      .card:hover {
+        filter: brightness(90%);
+        cursor: pointer;
+      }
     }
     .row-2 {
       display: flex;
@@ -240,7 +254,7 @@ main {
         background-color: $Light-Grayish-Blue-Card-BG;
         border-radius: 5px;
         margin: 20px;
-        width: 400px;
+        width: 300px;
         .card-text {
           display: inline-block;
           font-weight: 600;
@@ -252,6 +266,10 @@ main {
           display: inline-block;
           margin: 0;
         }
+      }
+      .card:hover {
+        filter: brightness(90%);
+        cursor: pointer;
       }
     }
   }

@@ -158,14 +158,15 @@ main .wrapper-1 .card-twitter {
 }
 
 main .wrapper-1 .card-instagram {
-  border-width: 4px;
-  border-style: solid;
-  -o-border-image: linear-gradient(to right, #fdc468, #df4996) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996)) 1;
-     border-image: linear-gradient(to right, #fdc468, #df4996) 1;
+  border: double 4px transparent;
+  border-radius: 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f2fa), to(#f0f2fa)), -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background-image: linear-gradient(#f0f2fa, #f0f2fa), linear-gradient(to right, #fdc468, #df4996);
   border-bottom: none;
-  border-right: none;
   border-left: none;
+  border-right: none;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 main .wrapper-1 .card-youtube {
@@ -173,7 +174,7 @@ main .wrapper-1 .card-youtube {
 }
 
 main .wrapper-1 .card {
-  width: 400px;
+  width: 250px;
   text-align: center;
   background-color: #f0f2fa;
   border-radius: 5px;
@@ -181,13 +182,14 @@ main .wrapper-1 .card {
 }
 
 main .wrapper-1 .card .card-username {
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 main .wrapper-1 .card .card-number {
   font-size: 50px;
   font-weight: 700;
-  margin: 0 100px;
+  margin: 0;
 }
 
 main .wrapper-1 .card .card-text {
@@ -199,6 +201,12 @@ main .wrapper-1 .card .card-text {
 
 main .wrapper-1 .card .card-daily-count {
   font-weight: 600;
+}
+
+main .wrapper-1 .card:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  cursor: pointer;
 }
 
 main .wrapper-2 .card-daily-count {
@@ -231,11 +239,11 @@ main .wrapper-2 .row-1 {
 }
 
 main .wrapper-2 .row-1 .card {
-  padding: 20px 30px;
+  padding: 10px 30px;
   background-color: #f0f2fa;
   border-radius: 5px;
   margin: 20px;
-  width: 400px;
+  width: 300px;
 }
 
 main .wrapper-2 .row-1 .card .card-text {
@@ -249,6 +257,12 @@ main .wrapper-2 .row-1 .card .card-number {
   font-weight: 600;
   display: inline-block;
   margin: 0;
+}
+
+main .wrapper-2 .row-1 .card:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  cursor: pointer;
 }
 
 main .wrapper-2 .row-2 {
@@ -269,7 +283,7 @@ main .wrapper-2 .row-2 .card {
   background-color: #f0f2fa;
   border-radius: 5px;
   margin: 20px;
-  width: 400px;
+  width: 300px;
 }
 
 main .wrapper-2 .row-2 .card .card-text {
@@ -283,5 +297,11 @@ main .wrapper-2 .row-2 .card .card-number {
   font-weight: 600;
   display: inline-block;
   margin: 0;
+}
+
+main .wrapper-2 .row-2 .card:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
