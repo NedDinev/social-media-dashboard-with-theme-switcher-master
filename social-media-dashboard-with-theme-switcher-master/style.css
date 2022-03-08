@@ -23,9 +23,13 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 80px;
+  padding: 0 50px;
   margin-bottom: 30px;
   /* Rounded sliders */
+}
+
+header hr {
+  display: none;
 }
 
 header .heading-wrapper {
@@ -58,8 +62,8 @@ header .dark-mode-switch p {
 header .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 54px;
+  height: 28px;
   margin-top: 6px;
   margin-left: 10px;
 }
@@ -83,8 +87,8 @@ header .slider {
 header .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 20px;
+  width: 20px;
   left: 4px;
   bottom: 4px;
   background: #252a41;
@@ -118,10 +122,11 @@ header .slider.round:before {
 }
 
 main {
-  padding: 0 60px;
+  padding: 20px 50px;
 }
 
 main h2 {
+  margin: 10px 0;
   color: #63687e;
 }
 
@@ -253,7 +258,7 @@ main .wrapper-2 .row-1 .card .card-text {
 }
 
 main .wrapper-2 .row-1 .card .card-number {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   display: inline-block;
   margin: 0;
@@ -293,7 +298,7 @@ main .wrapper-2 .row-2 .card .card-text {
 }
 
 main .wrapper-2 .row-2 .card .card-number {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   display: inline-block;
   margin: 0;
