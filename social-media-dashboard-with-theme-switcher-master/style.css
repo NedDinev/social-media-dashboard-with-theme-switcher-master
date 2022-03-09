@@ -5,6 +5,7 @@ body {
   font-weight: 400, 700;
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 
 .attribution {
@@ -188,7 +189,8 @@ main .wrapper-1 .card {
 
 main .wrapper-1 .card .card-username {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
+  color: #63687e;
 }
 
 main .wrapper-1 .card .card-number {
@@ -308,5 +310,14 @@ main .wrapper-2 .row-2 .card:hover {
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
   cursor: pointer;
+}
+
+.dark-mode-body {
+  background-color: #1e202a;
+  color: white;
+}
+
+.dark-mode-text {
+  background-color: #252a41;
 }
 /*# sourceMappingURL=style.css.map */

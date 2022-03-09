@@ -20,14 +20,19 @@
   <body>
     <header>
       <div class="heading-wrapper">
-        <h1>Social Media Dashboard</h1>
+        <h1 class="DM-bold-text">Social Media Dashboard</h1>
         <h3>Total Followers: 23,004</h3>
       </div>
       <hr />
       <div class="dark-mode-switch">
-        <p>Dark Mode</p>
+        <p class="DM-bold-text">Dark Mode</p>
         <label class="switch">
-          <input type="checkbox" checked />
+          <input
+            id="dark-mode-toggle"
+            type="checkbox"
+            onClick="darkModeToggle()"
+            checked
+          />
           <span class="slider round"></span>
         </label>
       </div>
@@ -43,7 +48,7 @@
             />
             @nathanf
           </h3>
-          <p class="card-number">1987</p>
+          <p class="card-number DM-bold-text">1987</p>
           <p class="card-text">Followers</p>
           <p class="card-daily-count green">
             <img class="green-up" src="./images/icon-up.svg" alt="up" />12 Today
@@ -58,7 +63,7 @@
             />
             @nathanf
           </h3>
-          <p class="card-number">1044</p>
+          <p class="card-number DM-bold-text">1044</p>
           <p class="card-text">Followers</p>
           <p class="card-daily-count green">
             <img class="green-up" src="./images/icon-up.svg" alt="up" />99 Today
@@ -73,7 +78,7 @@
             />
             @realnathanf
           </h3>
-          <p class="card-number">11k</p>
+          <p class="card-number DM-bold-text">11k</p>
           <p class="card-text">Followers</p>
           <p class="card-daily-count green">
             <img class="green-up" src="./images/icon-up.svg" alt="up" />1099
@@ -89,7 +94,7 @@
             />
             Nathan F.
           </h3>
-          <p class="card-number">8239</p>
+          <p class="card-number DM-bold-text">8239</p>
           <p class="card-text">Subscribers</p>
           <p class="card-daily-count red">
             <img class="red-down" src="./images/icon-down.svg" alt="down" />144
@@ -108,7 +113,7 @@
               class="card-icon"
             />
             <div class="inline-box">
-              <p class="card-number">87</p>
+              <p class="card-number DM-bold-text">87</p>
 
               <p class="card-daily-count green">
                 <img class="green-up" src="./images/icon-up.svg" alt="up" />3%
@@ -123,7 +128,7 @@
               class="card-icon"
             />
             <div class="inline-box">
-              <p class="card-number">52</p>
+              <p class="card-number DM-bold-text">52</p>
 
               <p class="card-daily-count red">
                 <img
@@ -142,7 +147,7 @@
               class="card-icon"
             />
             <div class="inline-box">
-              <p class="card-number">5462</p>
+              <p class="card-number DM-bold-text">5462</p>
 
               <p class="card-daily-count green">
                 <img
@@ -161,7 +166,7 @@
               class="card-icon"
             />
             <div class="inline-box">
-              <p class="card-number">52k</p>
+              <p class="card-number DM-bold-text">52k</p>
 
               <p class="card-daily-count green">
                 <img
@@ -182,7 +187,7 @@
               class="card-icon"
             />
             <div class="inline-box">
-              <p class="card-number">117</p>
+              <p class="card-number DM-bold-text">117</p>
 
               <p class="card-daily-count green">
                 <img class="green-up" src="./images/icon-up.svg" alt="up" />303%
@@ -197,7 +202,7 @@
               class="card-icon"
             />
             <div class="inline-box">
-              <p class="card-number">507</p>
+              <p class="card-number DM-bold-text">507</p>
 
               <p class="card-daily-count green">
                 <img class="green-up" src="./images/icon-up.svg" alt="up" />553%
@@ -212,7 +217,7 @@
               class="card-icon"
             />
             <div class="inline-box">
-              <p class="card-number">107</p>
+              <p class="card-number DM-bold-text">107</p>
 
               <p class="card-daily-count red">
                 <img
@@ -231,7 +236,7 @@
               class="card-icon"
             />
             <div class="inline-box">
-              <p class="card-number">1407</p>
+              <p class="card-number DM-bold-text">1407</p>
 
               <p class="card-daily-count red">
                 <img
@@ -251,5 +256,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://www.github.com/NedDinev">NedDinev</a>.
     </div>
+    <script type="text/javascript" src="script.js" defer></script>
   </body>
 </html>

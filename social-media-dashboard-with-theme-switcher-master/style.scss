@@ -15,7 +15,7 @@ $Very-Dark-Blue-BG: hsl(230, 17%, 14%);
 $Very-Dark-Blue-Top-BG-Pattern: hsl(232, 19%, 15%);
 $Dark-Desaturated-Blue-Card-BG: hsl(228, 28%, 20%);
 $Desaturated-Blue-Text: hsl(228, 34%, 66%);
-$White-Text-: hsl(0, 0%, 100%);
+$White-Text: hsl(0, 0%, 100%);
 // Light Theme
 $White-BG: hsl(0, 0%, 100%);
 $Very-Pale-Blue-Top-BG-Pattern: hsl(225, 100%, 98%);
@@ -28,6 +28,7 @@ body {
   font-weight: 400, 700;
   margin: 0;
   padding: 0;
+  background-color: $White-BG;
 }
 .attribution {
   font-size: 11px;
@@ -184,7 +185,8 @@ main {
       margin: 0 20px;
       .card-username {
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 500;
+        color: $Dark-Grayish-Blue-Text;
       }
       .card-number {
         font-size: 50px;
@@ -277,4 +279,11 @@ main {
       }
     }
   }
+}
+.dark-mode-body {
+  background-color: $Very-Dark-Blue-BG;
+  color: $White-Text;
+}
+.dark-mode-text {
+  background-color: $Dark-Desaturated-Blue-Card-BG;
 }
