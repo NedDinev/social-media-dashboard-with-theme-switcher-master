@@ -163,18 +163,6 @@ main .wrapper-1 .card-twitter {
   border-top: 4px solid #1ca0f2;
 }
 
-main .wrapper-1 .card-instagram {
-  border: double 4px transparent;
-  border-radius: 30px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f2fa), to(#f0f2fa)), -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
-  background-image: linear-gradient(#f0f2fa, #f0f2fa), linear-gradient(to right, #fdc468, #df4996);
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
 main .wrapper-1 .card-youtube {
   border-top: 4px solid #c4032a;
 }
@@ -214,6 +202,31 @@ main .wrapper-1 .card:hover {
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
   cursor: pointer;
+}
+
+main .wrapper-1 .card-instagram {
+  position: relative;
+}
+
+main .wrapper-1 .card-instagram::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px;
+  padding: 4px 0px 0px 0px;
+  background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background: linear-gradient(to right, #fdc468, #df4996);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: xor;
+  -webkit-mask-composite: exclude;
+          mask-composite: exclude;
 }
 
 main .wrapper-2 .card-daily-count {
@@ -315,9 +328,5 @@ main .wrapper-2 .row-2 .card:hover {
 .dark-mode-body {
   background-color: #1e202a;
   color: white;
-}
-
-.dark-mode-text {
-  background-color: #252a41;
 }
 /*# sourceMappingURL=style.css.map */
