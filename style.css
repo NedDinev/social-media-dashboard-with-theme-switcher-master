@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400, 700;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px;
+  margin-bottom: 30px;
+  /* Rounded sliders */
+}
+
+header hr {
+  display: none;
+}
+
+header .heading-wrapper {
+  display: inline-block;
+}
+
+header .heading-wrapper h1 {
+  margin-bottom: 5px;
+}
+
+header .heading-wrapper h3 {
+  color: #63687e;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+header .dark-mode-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+header .dark-mode-switch p {
+  color: #aeb3cb;
+  font-weight: 600;
+}
+
+header .switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 28px;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+
+header .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+header .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(232deg, #378fe6 0%, #3eda82 70%);
+}
+
+header .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background: #252a41;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header input:checked + .slider {
+  background: #aeb3cb;
+}
+
+header input:hover + .slider {
+  background: linear-gradient(232deg, #378fe6 0%, #3eda82 70%);
+}
+
+header input:checked + .slider:before {
+  background: white;
+}
+
+header input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+header .slider.round {
+  border-radius: 34px;
+}
+
+header .slider.round:before {
+  border-radius: 50%;
+}
+
+main {
+  padding: 20px 50px;
+}
+
+main h2 {
+  margin: 10px 0;
+  color: #63687e;
+}
+
+main .green-up,
+main .red-down {
+  margin-bottom: 3px;
+  margin-right: 3px;
+}
+
+main .green {
+  color: #1db489;
+}
+
+main .red {
+  color: #dc414c;
+}
+
+main .wrapper-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+main .wrapper-1 .card-facebook {
+  border-top: 4px solid #198ff5;
+}
+
+main .wrapper-1 .card-twitter {
+  border-top: 4px solid #1ca0f2;
+}
+
+main .wrapper-1 .card-youtube {
+  border-top: 4px solid #c4032a;
+}
+
+main .wrapper-1 .card {
+  width: 250px;
+  text-align: center;
+  background-color: #f0f2fa;
+  border-radius: 5px;
+  margin: 0 20px;
+}
+
+main .wrapper-1 .card .card-username {
+  font-size: 14px;
+  font-weight: 500;
+  color: #63687e;
+}
+
+main .wrapper-1 .card .card-number {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+
+main .wrapper-1 .card .card-text {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #63687e;
+  margin: 0 0 20px 0;
+}
+
+main .wrapper-1 .card .card-daily-count {
+  font-weight: 600;
+}
+
+main .wrapper-1 .card:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  cursor: pointer;
+}
+
+main .wrapper-1 .card-instagram {
+  position: relative;
+}
+
+main .wrapper-1 .card-instagram::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px;
+  padding: 4px 0px 0px 0px;
+  background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background: linear-gradient(to right, #fdc468, #df4996);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: xor;
+  -webkit-mask-composite: exclude;
+          mask-composite: exclude;
+}
+
+main .wrapper-2 .card-daily-count {
+  font-weight: 600;
+  display: block;
+  float: right;
+}
+
+main .wrapper-2 .inline-box {
+  margin-top: 15px;
+}
+
+main .wrapper-2 .card-icon {
+  display: block;
+  float: right;
+  margin-top: 10px;
+}
+
+main .wrapper-2 .row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .wrapper-2 .row-1 .card {
+  padding: 10px 30px;
+  background-color: #f0f2fa;
+  border-radius: 5px;
+  margin: 20px;
+  width: 300px;
+}
+
+main .wrapper-2 .row-1 .card .card-text {
+  display: inline-block;
+  font-weight: 600;
+  color: #63687e;
+}
+
+main .wrapper-2 .row-1 .card .card-number {
+  font-size: 25px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0;
+}
+
+main .wrapper-2 .row-1 .card:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  cursor: pointer;
+}
+
+main .wrapper-2 .row-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .wrapper-2 .row-2 .card {
+  padding: 15px 30px;
+  background-color: #f0f2fa;
+  border-radius: 5px;
+  margin: 20px;
+  width: 300px;
+}
+
+main .wrapper-2 .row-2 .card .card-text {
+  display: inline-block;
+  font-weight: 600;
+  color: #63687e;
+}
+
+main .wrapper-2 .row-2 .card .card-number {
+  font-size: 25px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0;
+}
+
+main .wrapper-2 .row-2 .card:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  cursor: pointer;
+}
+
+.dark-mode-body {
+  background-color: #1e202a;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
